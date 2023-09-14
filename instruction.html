@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset='UTF-8'> -->
+    <title>The Choose-And-Solve Task (CAST) demo page</title>
+    <link rel='stylesheet' href='jspsych/dist/jspsych.css'>
+    <!-- <script src='jspsych/dist/jquery.min.js'></script> -->
+    <script src='jspsych/dist/jspsych.js'></script>
+    <!-- <script src='jspsych/dist/jspsych-text.js'></script> -->
+    <!-- <script src='jspsych/dist/jspsych-poldrack-instructions.js'></script> -->
+    <!-- <script src='jspsych/dist/jspsych-single-stim-rev.js'></script> -->
+    <!-- <script src='jspsych/dist/poldrack_utils.js'></script> -->
+    <!-- <script src='jspsych/dist/probset.js'></script> -->
+    <!-- <script src='jspsych/dist/practice_problems.js'></script> -->
+    <!-- <script src='jspsych/dist/choose-and-solve_main.js'></script> -->
+    <script src="jspsych/dist/plugin-html-button-response.js"></script>
+    <script src="jspsych/dist/plugin-html-keyboard-response.js"></script>
+    <script src="jspsych/dist/plugin-image-keyboard-response.js"></script>
+    <script src="jspsych/dist/plugin-preload.js"></script>
+    <script src="jspsych/data/practice_problems.js"></script>
+</head>
+
+<body></body>
+
+    
+<script>
+    var jsPsych = initJsPsych({
+        on_finish: function() {
+            jsPsych.data.displayData();
+        }
+    });
+
+    /* experiment parameters */
+    var reps_per_trial_type = 4;
+
+    /*set up welcome block*/
+    var welcome = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: "Welcome to the Instruction Page. Press any key to begin."
+    };
+
+    /*set up instructions block*/
+    var veh_info = practice_problems[0];
+    var instructions = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: "<p>In this task, you will see the vehicle information of two vehicles.</p>"+
+            "<p>The two vehicles have the same make, weight, region, brake location, brake pad thickness.</p>"+
+            "<p>However, there are some differences between them.</p>"+
+            "Vehicle 1" +
+            "<div class='vehicle-table'><table><tr><th>Property</th><th>Value</th></tr>"+
+            "<tr><td>Body</td><td>" + "Truck Tractor" + 
+            "</td></tr><tr><td>Age</td><td>" + "28" + 
+            "</td></tr></table></div>"+
+            "Vehicle 2" +
+            "<div class='vehicle-table'><table><tr><th>Property</th><th>Value</th></tr>"+
+            "<tr><td>Body</td><td>" + "Truck" + 
+            "</td></tr><tr><td>Age</td><td>" + "10" + 
+            "</td></tr></table></div>"+
+            "<p>The brake tends to deteriorate faster when it belongs to a Truck Tractor.</p>"+
+            "<p>The brake tends to deteriorate faster when it belongs to a older vehicle.</p>"+
+            "<p>Click any key to continue.</p>",
+        post_trial_gap: 1000
+    };
+
+    /*set up experiment structure*/
+    var timeline = [];
+    timeline.push(welcome);
+    timeline.push(instructions);
+
+    /*start experiment*/
+    jsPsych.run(timeline);
+</script>
+
+</html>
