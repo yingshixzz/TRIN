@@ -54,15 +54,15 @@ Qualtrics.SurveyEngine.addOnload(function () {
 
     /* Change 2: Defining and loading required resources */
     // `requiredResources` must include all the required JS files
-    var task_github = "https://yingshixzz.github.io/TRIN/jspsych/"; // https://<your-github-username>.github.io/<your-experiment-name>
+    var task_github = "https://yingshixzz.github.io/TRIN/"; // https://<your-github-username>.github.io/<your-experiment-name>
     var requiredResources = [
-        task_github + 'dist/jspsych.js',
-        task_github + "dist/plugin-html-button-response.js",
-        task_github + "dist/plugin-html-keyboard-response.js",
-        task_github + "dist/plugin-image-keyboard-response.js",
-        task_github + "dist/plugin-preload.js",
-        task_github + "data/practice_problems.js",
-        task_github + "data/trin_main.js"
+        task_github + "jspsych/dist/jspsych.js",
+        task_github + "jspsych/dist/plugin-html-button-response.js",
+        task_github + "jspsych/dist/plugin-html-keyboard-response.js",
+        task_github + "jspsych/dist/plugin-image-keyboard-response.js",
+        task_github + "jspsych/dist/plugin-preload.js",
+        task_github + "jspsych/data/practice_problems.js",
+        task_github + "trin_main.js"
     ];
 
     function loadScript(idx) {
@@ -88,72 +88,73 @@ Qualtrics.SurveyEngine.addOnload(function () {
             }
         });
     
-        /* experiment parameters */
-        var reps_per_trial_type = 4;
+        // /* experiment parameters */
+        // var reps_per_trial_type = 4;
     
-        /*set up welcome block*/
-        var welcome = {
-            type: jsPsychHtmlKeyboardResponse,
-            stimulus: "Welcome to the experiment. Press any key to begin."
-        };
+        // /*set up welcome block*/
+        // var welcome = {
+        //     type: jsPsychHtmlKeyboardResponse,
+        //     stimulus: "Welcome to the experiment. Press any key to begin."
+        // };
     
-        /*set up instructions block*/
-        var veh_info = practice_problems[0];
-        var instructions = {
-            type: jsPsychHtmlKeyboardResponse,
-            stimulus: "<p>In this task, you will see the vehicle information, like the example below.</p>"+
-                "<div class='vehicle-table'><table><tr><th>Property</th><th>Value</th></tr><tr><td>Make</td><td>"+
-                veh_info.make + "</td></tr><tr><td>Body</td><td>" + veh_info.body + 
-                "</td></tr><tr><td>Age</td><td>" + veh_info.age + 
-                "</td></tr><tr><td>Gross Vehice Weight Rating</td><td>" + veh_info.weight + 
-                "</td></tr><tr><td>Region</td><td>" + veh_info.region + 
-                "</td></tr><tr><td>Odometer</td><td>" + veh_info.odometer + 
-                "</td></tr><tr><td>Brake Location</td><td>" + veh_info.location +
-                "</td></tr><tr><td>Average Mileage Driven Per Year</td><td>" + veh_info.mileage + 
-                "</td></tr><tr><td>Brake Pad Thickness</td><td>" + veh_info.thickness +
-                "</td></tr></table></div>"+
-                "<p>Click on the inspection decision you want to implement.</p>"+
-                "<p>Press the right arrow key if the middle arrow is pointing right. (>)</p>"+
-                "<p>Click the the decision Yes to begin.</p>",
-            post_trial_gap: 1000
-        };
+        // /*set up instructions block*/
+        // var veh_info = practice_problems[0];
+        // var instructions = {
+        //     type: jsPsychHtmlKeyboardResponse,
+        //     stimulus: "<p>In this task, you will see the vehicle information, like the example below.</p>"+
+        //         "<div class='vehicle-table'><table><tr><th>Property</th><th>Value</th></tr><tr><td>Make</td><td>"+
+        //         veh_info.make + "</td></tr><tr><td>Body</td><td>" + veh_info.body + 
+        //         "</td></tr><tr><td>Age</td><td>" + veh_info.age + 
+        //         "</td></tr><tr><td>Gross Vehice Weight Rating</td><td>" + veh_info.weight + 
+        //         "</td></tr><tr><td>Region</td><td>" + veh_info.region + 
+        //         "</td></tr><tr><td>Odometer</td><td>" + veh_info.odometer + 
+        //         "</td></tr><tr><td>Brake Location</td><td>" + veh_info.location +
+        //         "</td></tr><tr><td>Average Mileage Driven Per Year</td><td>" + veh_info.mileage + 
+        //         "</td></tr><tr><td>Brake Pad Thickness</td><td>" + veh_info.thickness +
+        //         "</td></tr></table></div>"+
+        //         "<p>Click on the inspection decision you want to implement.</p>"+
+        //         "<p>Press the right arrow key if the middle arrow is pointing right. (>)</p>"+
+        //         "<p>Click the the decision Yes to begin.</p>",
+        //     post_trial_gap: 1000
+        // };
     
-        /*set up experiment structure*/
-        var timeline = [];
-        timeline.push(welcome);
-        timeline.push(instructions);
+        // /*set up experiment structure*/
+        // var timeline = [];
+        // timeline.push(welcome);
+        // timeline.push(instructions);
     
-        for (var ii = 0; ii < practice_problems.length; ii++) {
-            var veh_info = practice_problems[ii];
-            var veh_info_table = "<div class='vehicle-table'><table><tr><th>Property</th><th>Value</th></tr><tr><td>Make</td><td>"+
-                        veh_info.make + "</td></tr><tr><td>Body</td><td>" + veh_info.body + 
-                        "</td></tr><tr><td>Age</td><td>" + veh_info.age + 
-                        "</td></tr><tr><td>Gross Vehice Weight Rating</td><td>" + veh_info.weight + 
-                        "</td></tr><tr><td>Region</td><td>" + veh_info.region + 
-                        "</td></tr><tr><td>Odometer</td><td>" + veh_info.odometer + 
-                        "</td></tr><tr><td>Brake Location</td><td>" + veh_info.location +
-                        "</td></tr><tr><td>Average Mileage Driven Per Year</td><td>" + veh_info.mileage + 
-                        "</td></tr><tr><td>Brake Pad Thickness</td><td>" + veh_info.thickness +
-                        "</td></tr></table></div>";
-            var trial = {
-                type: jsPsychHtmlButtonResponse,
-                stimulus: veh_info_table,
-                choices: ['No inspection','Brake', 'Tire', 'Lighting'],
-                post_trial_gap: 2000,   //ITI duration
-                prompt: '<p>Select the one match your decision-making.</p>',
-                save_trial_parameters: {
-                // save the randomly-selected button order and ITI value to the trial data
-                choices: true,
-                post_trial_gap: true
-                },
-                on_finish: function(data) {
-                    // determine which button was pressed, based on the response (button index: 0 or 1) and choices array (randomized order of button labels)
-                    data.response_button_label = data.choices[data.response];
-                }   
-            };
-            timeline.push(trial);
-        };
-    
+        // for (var ii = 0; ii < practice_problems.length; ii++) {
+        //     var veh_info = practice_problems[ii];
+        //     var veh_info_table = "<div class='vehicle-table'><table><tr><th>Property</th><th>Value</th></tr><tr><td>Make</td><td>"+
+        //                 veh_info.make + "</td></tr><tr><td>Body</td><td>" + veh_info.body + 
+        //                 "</td></tr><tr><td>Age</td><td>" + veh_info.age + 
+        //                 "</td></tr><tr><td>Gross Vehice Weight Rating</td><td>" + veh_info.weight + 
+        //                 "</td></tr><tr><td>Region</td><td>" + veh_info.region + 
+        //                 "</td></tr><tr><td>Odometer</td><td>" + veh_info.odometer + 
+        //                 "</td></tr><tr><td>Brake Location</td><td>" + veh_info.location +
+        //                 "</td></tr><tr><td>Average Mileage Driven Per Year</td><td>" + veh_info.mileage + 
+        //                 "</td></tr><tr><td>Brake Pad Thickness</td><td>" + veh_info.thickness +
+        //                 "</td></tr></table></div>";
+        //     var trial = {
+        //         type: jsPsychHtmlButtonResponse,
+        //         stimulus: veh_info_table,
+        //         choices: ['No inspection','Brake', 'Tire', 'Lighting'],
+        //         post_trial_gap: 2000,   //ITI duration
+        //         prompt: '<p>Select the one match your decision-making.</p>',
+        //         save_trial_parameters: {
+        //         // save the randomly-selected button order and ITI value to the trial data
+        //         choices: true,
+        //         post_trial_gap: true
+        //         },
+        //         on_finish: function(data) {
+        //             // determine which button was pressed, based on the response (button index: 0 or 1) and choices array (randomized order of button labels)
+        //             data.response_button_label = data.choices[data.response];
+        //         }   
+        //     };
+        //     timeline.push(trial);
+        // };
+        
+
         /*start experiment*/
         jsPsych.run(timeline);
 
@@ -161,13 +162,17 @@ Qualtrics.SurveyEngine.addOnload(function () {
         // function sleep(time) {
         //     return new Promise((resolve) => setTimeout(resolve, time));
         // }
+        
+        // jQuery is loaded in Qualtrics by default
+        jQuery("<div id = 'display_stage_background'></div>").appendTo('body');
+        jQuery("<div id = 'display_stage'></div>").appendTo('body');
 
         // sleep(500).then(() => {
         //     // clear the stage
         //     jQuery('.display_stage').remove();
         //     jQuery('.display_stage_background').remove();
 
-        //     // simulate click on Qualtrics "next" button, making use of the Qualtrics JS API
+            // simulate click on Qualtrics "next" button, making use of the Qualtrics JS API
         //     qthis.clickNextButton();
         // });
     }

@@ -1,3 +1,24 @@
+var task_github = "https://yingshixzz.github.io/TRIN/"; // https://<your-github-username>.github.io/<your-experiment-name>
+var requiredResources = [
+    task_github + "jspsych/dist/jspsych.js",
+    task_github + "jspsych/dist/plugin-html-button-response.js",
+    task_github + "jspsych/dist/plugin-html-keyboard-response.js",
+    task_github + "jspsych/dist/plugin-image-keyboard-response.js",
+    task_github + "jspsych/dist/plugin-preload.js",
+    task_github + "jspsych/data/practice_problems.js",
+];
+
+function loadScript(idx) {
+    console.log("Loading ", requiredResources[idx]);
+    jQuery.getScript(requiredResources[idx], function () {
+        if ((idx + 1) < requiredResources.length) {
+            loadScript(idx + 1);
+        } else {
+            initExp();
+        }
+    });
+}
+
 /* experiment parameters */
 var reps_per_trial_type = 4;
 

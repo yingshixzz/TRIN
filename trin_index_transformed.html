@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset='UTF-8'> -->
+    <title>The Choose-And-Solve Task (CAST) demo page</title>
+    <link rel='stylesheet' href='jspsych/dist/jspsych.css'>
+    <script src='jspsych/dist/jspsych.js'></script>
+    <script src="jspsych/dist/plugin-html-button-response.js"></script>
+    <script src="jspsych/dist/plugin-html-keyboard-response.js"></script>
+    <script src="jspsych/dist/plugin-image-keyboard-response.js"></script>
+    <script src="jspsych/dist/plugin-preload.js"></script>
+    <script src="jspsych/data/practice_problems.js"></script>
+    <script src="trin_main.js"></script>
+</head>
+
+<body></body>
+
+<script>
+    var jsPsych = initJsPsych({
+        on_finish: function() {
+            jsPsych.data.displayData();
+        }
+    });
+
+    /*start experiment*/
+    jsPsych.run(timeline);
+</script>
+
+</html>
