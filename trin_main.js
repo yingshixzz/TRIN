@@ -1,6 +1,7 @@
 var task_github = "https://yingshixzz.github.io/TRIN/"; // https://<your-github-username>.github.io/<your-experiment-name>
 var requiredResources = [
     task_github + "jspsych/dist/jspsych.js",
+    task_github + "jspsych/dist/jquery.min.js",
     task_github + "jspsych/dist/plugin-html-button-response.js",
     task_github + "jspsych/dist/plugin-html-keyboard-response.js",
     task_github + "jspsych/dist/plugin-image-keyboard-response.js",
