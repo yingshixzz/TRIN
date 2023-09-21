@@ -365,10 +365,11 @@
   margin: 0px;
   font-size: 14px;
   font-weight: 400;
+  font-color: #050505;
   font-family: "Open Sans", "Arial", sans-serif;
   cursor: pointer;
   line-height: 1.4;
-  text-align: right;
+  text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   background-image: none;
@@ -378,7 +379,9 @@
   background-color: #fff;
   border-color: #ccc;
 }
-
+.jspsych-btn-right {
+  float: right;
+}
 /* only apply the hover style on devices with a mouse/pointer that can hover - issue #977 */
 @media (hover: hover) {
   .jspsych-btn:hover {
