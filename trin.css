@@ -361,7 +361,7 @@
 /* borrowing Bootstrap style for btn elements, but combining styles a bit */
 .jspsych-btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 12px 12px;
   margin: 0px;
   font-size: 14px;
   font-weight: 400;
@@ -374,7 +374,7 @@
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-  color: #333;
+  color: #050505;
   background-color: #fff;
   border-color: #ccc;
 }
