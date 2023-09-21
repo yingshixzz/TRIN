@@ -391,6 +391,15 @@
   border-color: #000000;
 }
 
+.jspsych-btn:focus {
+  background-color: #ddd;
+  border-color: #000000;
+}
+
+.jspsych-btn:hover {
+  background-color: #ddd;
+  border-color: #000000;
+}
 .jspsych-btn:disabled {
   background-color: #eee;
   color: #aaa;
