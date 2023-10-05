@@ -1,0 +1,41 @@
+VehicleMake,VehicleBody,Gross Vehicle Weight Rating,Region,VehicleAge (unit: Year),Odometer in the last inspection (unit: mile),Average Mileage Driven Per Year (unit: mile),BrakeLocation,Brake Pad Thickness in the last inspection (unit:/32inch),Current Brake Pad Thickness,Current Brake Pad Thickness (annual-int),Current Brake Pad Thickness (annual-round),Inspection
+STERLING TRUCK,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Small metro,18 years,55896 miles,2187 miles,Left Front,6 /32inch,2,2,2,1
+INTERNATIONAL,Truck-Tractor,"Class 8: 33,001 lb and above (14,969 kg and above)",Micropolitan,25 years,364389 miles,833 miles,Left Front,4 /32inch,2,2,2,1
+FREIGHTLINER,Truck-Tractor,"Class 8: 33,001 lb and above (14,969 kg and above)",Micropolitan,22 years,42578 miles,1393 miles,Left Front,4 /32inch,3,2,3,0
+FORD,Truck,"Class 7: 26,001 - 33,000 lb (11,794 - 14,969 kg)",Small metro,24 years,101931 miles,309 miles,Left Front,5 /32inch,3,3,3,0
+INTERNATIONAL,Truck-Tractor,"Class 8: 33,001 lb and above (14,969 kg and above)",Micropolitan,25 years,364389 miles,833 miles,Right Front,4 /32inch,3,3,3,0
+MACK,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Large fringe metro,19 years,275506 miles,6980 miles,Left Rear,3 /32inch,3,3,3,0
+PETERBILT,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Micropolitan,11 years,431811 miles,3835 miles,Left Front,4 /32inch,4,4,4,0
+FORD,Truck,"Class 7: 26,001 - 33,000 lb (11,794 - 14,969 kg)",Small metro,26 years,102287 miles,819 miles,Right Front,5 /32inch,4,4,4,0
+MACK,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Medium metro,36 years,112102 miles,3830 miles,Left Rear,7 /32inch,4,4,4,0
+PETERBILT,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Medium metro,38 years,736136 miles,3967 miles,Right Rear,7 /32inch,4,3,4,0
+MACK,Truck-Tractor,"Class 8: 33,001 lb and above (14,969 kg and above)",Large fringe metro,28 years,306222 miles,16519 miles,Left Front,10 /32inch,0,0,0,1
+KENWORTH,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Large fringe metro,22 years,495359 miles,18322 miles,Right Rear,8 /32inch,3,2,2,1
+FREIGHTLINER,Truck,"Class 7: 26,001 - 33,000 lb (11,794 - 14,969 kg)",Medium metro,8 years,288942 miles,17755 miles,Left Front,9 /32inch,4,3,4,0
+MACK,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Large fringe metro,13 years,279474 miles,16716 miles,Right Rear,8 /32inch,8,8,8,0
+KENWORTH,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Small metro,9 years,118320 miles,14384 miles,Left Rear,10 /32inch,5,5,5,0
+PETERBILT,Truck-Tractor,"Class 8: 33,001 lb and above (14,969 kg and above)",Large fringe metro,15 years,1010325 miles,17354 miles,Right Front,8 /32inch,5,5,5,0
+KENWORTH,Truck-Tractor,"Class 8: 33,001 lb and above (14,969 kg and above)",Small metro,9 years,231568 miles,12665 miles,Left Front,8 /32inch,6,6,6,0
+PETERBILT,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Medium metro,8 years,100934 miles,14211 miles,Left Front,10 /32inch,6,6,6,0
+INTERNATIONAL,Truck,"Class 7: 26,001 - 33,000 lb (11,794 - 14,969 kg)",Medium metro,2 years,91583 miles,19835 miles,Left Rear,10 /32inch,10,10,10,0
+PETERBILT,Truck-Tractor,"Class 8: 33,001 lb and above (14,969 kg and above)",Large fringe metro,8 years,72642 miles,13391 miles,Left Rear,9 /32inch,7,7,7,0
+MACK,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Large fringe metro,23 years,461416 miles,3777 miles,Left Rear,10 /32inch,0,0,1,1
+FREIGHTLINER,Truck,"Class 7: 26,001 - 33,000 lb (11,794 - 14,969 kg)",Medium metro,18 years,39532 miles,911 miles,Right Front,15 /32inch,1,0,1,1
+INTERNATIONAL,Truck-Tractor,"Class 8: 33,001 lb and above (14,969 kg and above)",Medium metro,4 years,155052 miles,251 miles,Right Rear,9 /32inch,3,2,2,1
+MACK,Truck-Tractor,"Class 8: 33,001 lb and above (14,969 kg and above)",Large central metro,15 years,632425 miles,473 miles,Right Rear,14 /32inch,4,2,2,1
+FORD,Truck,"Class 7: 26,001 - 33,000 lb (11,794 - 14,969 kg)",Large fringe metro,35 years,215480 miles,820 miles,Left Front,10 /32inch,2,2,3,0
+STERLING TRUCK,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Small metro,20 years,86965 miles,2724 miles,Right Front,14 /32inch,2,3,3,0
+FORD,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Micropolitan,22 years,49821 miles,3316 miles,Left Rear,10 /32inch,2,2,3,0
+FREIGHTLINER,Truck-Tractor,"Class 8: 33,001 lb and above (14,969 kg and above)",Medium metro,26 years,871988 miles,4832 miles,Right Front,8 /32inch,3,2,3,0
+MACK,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Large fringe metro,19 years,125459 miles,3431 miles,Left Front,10 /32inch,3,2,3,0
+FORD,Truck,"Class 7: 26,001 - 33,000 lb (11,794 - 14,969 kg)",Medium metro,23 years,87291 miles,3060 miles,Left Front,8 /32inch,4,4,4,0
+MACK,Truck-Tractor,"Class 8: 33,001 lb and above (14,969 kg and above)",Large fringe metro,28 years,306222 miles,16519 miles,Left Front,10 /32inch,0,0,0,1
+INTERNATIONAL,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Medium metro,6 years,90892 miles,10625 miles,Left Front,9 /32inch,2,2,2,1
+STERLING TRUCK,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Micropolitan,12 years,293683 miles,20602 miles,Left Rear,18 /32inch,3,2,2,1
+FREIGHTLINER,Truck,"Class 7: 26,001 - 33,000 lb (11,794 - 14,969 kg)",Micropolitan,17 years,251493 miles,7976 miles,Left Rear,16 /32inch,4,2,2,1
+KENWORTH,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Large fringe metro,22 years,495359 miles,18322 miles,Right Rear,8 /32inch,3,2,2,1
+GMC,Truck,"Class 8: 33,001 lb and above (14,969 kg and above)",Large fringe metro,13 years,132153 miles,5584 miles,Left Front,8 /32inch,7,7,7,0
+FREIGHTLINER,Truck,"Class 7: 26,001 - 33,000 lb (11,794 - 14,969 kg)",Medium metro,8 years,288942 miles,17755 miles,Left Front,9 /32inch,4,3,4,0
+FREIGHTLINER,Truck,"Class 7: 26,001 - 33,000 lb (11,794 - 14,969 kg)",Medium metro,15 years,354825 miles,12388 miles,Left Rear,8 /32inch,3,3,3,0
+FORD,Truck,"Class 7: 26,001 - 33,000 lb (11,794 - 14,969 kg)",Medium metro,34 years,688526 miles,7757 miles,Left Front,8 /32inch,3,2,3,0
+FREIGHTLINER,Truck,"Class 7: 26,001 - 33,000 lb (11,794 - 14,969 kg)",Medium metro,8 years,288942 miles,17755 miles,Left Front,9 /32inch,4,3,4,0
